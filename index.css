@@ -1,0 +1,316 @@
+/* importing my fonts from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* resetting defaults */
+:root{
+    /* color */
+    --white-color: rgb(226 232 240);
+    --par-sub-color: rgb(160, 167, 176);
+    --bg-color:#112044;
+    --act-hover-bg-color: #17264A;
+    --stack-bg-color: #183756;
+    /* fonts */
+    --font-fam: "JetBrains Mono", monospace;
+
+}
+
+*,*::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    /* font size conversion for accurate and faster converter default is 16px = 1rem , after conver, 10px = 1rem */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font-family: var(--font-fam);
+    background-color: var(--bg-color);
+    color:var(--white-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+a,li{
+    text-decoration: none;
+    list-style-type: none;
+    color:var(--white-color);
+}
+main{
+    display: flex;
+    gap: 8rem;
+    max-width: 140rem;
+    padding-inline:3rem;
+    margin: 0 auto;
+
+}
+.left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    position: fixed;
+    margin-right: 60%;
+    height: 100%;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.name-text{
+    font-size: 4rem;
+    font-weight: 700;
+    letter-spacing: -2px;
+}
+.des-text{
+    font-size: 2.2rem;
+    opacity: 0.9;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+.sub-des-text{
+    color: var(--par-sub-color);
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.list-items{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.menu-link{
+    position: relative;
+    transition: 0.3s all ease;
+}
+.line{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 6rem;
+    height: 1px;
+    background-color: var(--par-sub-color);
+    border-radius: 3rem;
+    transform: translateY(-50%);
+    border: none;
+    transition: 0.4s all ease;
+
+}
+.link{
+    padding-left: 8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    color: var(--par-sub-color);
+}
+
+.menu-link:hover .line {
+    width: 10rem;
+    background-color: var(--white-color) !important;
+}
+.menu-link:hover .link {
+    padding-left: 12rem;
+    color: var(--white-color);
+    font-weight: 700;
+}
+.other-platforms ul{
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    bottom: 8rem;
+    cursor: pointer;
+}
+.other-platforms ul li{
+    font-size: 2rem;
+    color:var(--par-sub-color);
+    opacity: 0.7;
+}
+.other-platforms ul li i:hover{
+    transform: scale(1.5);
+}
+.right{
+    width: 60%;
+    margin-left:  40%;
+    padding-bottom: 10rem;
+}
+.about-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-top: 10rem;
+
+}
+.title{
+    padding-top: 1rem;
+    font-size: 2.3rem;
+    color: var(--white-color) !important;
+    opacity: 0.8;
+
+}
+.text{
+    color:var(--par-sub-color);
+
+}
+.learning-lists{
+    padding-left: 3rem;
+}
+.activity-lists{
+    padding-left: 4rem;
+}
+.learning-list{
+    list-style-type: circle;
+    color:var(--par-sub-color);
+}
+.activity-list{
+    color:var(--par-sub-color);
+    list-style-type: decimal;
+}
+hr{
+    margin: 2rem 0;
+    background-color:var(--par-sub-color);
+    border: none;
+    border-top: 2px dashed #333;
+}
+.activities-container{
+    padding-top: 4rem;
+}
+._activity{
+    display: flex;
+    padding: 3rem;
+    cursor: pointer;
+
+}
+._activity:hover{
+    background-color: var(--act-hover-bg-color);
+    border-radius: 0.8rem;
+}
+.act-left{
+    width: 30%;
+}
+.act-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.act-title{
+    font-size: 1.6rem;
+    color:var(--par-sub-color);
+    text-transform: uppercase;
+    position: relative;
+}
+.act-line{
+    border-top: 1px solid var(--par-sub-color);
+    width: 2rem;
+    display: inline-block;
+    position: absolute;
+    left: 45%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.act-num{
+    padding-left: 4rem;
+}
+.act-main-title{
+    font-size: 2rem;
+}
+.act-text{
+    color:var(--par-sub-color);
+}
+.stack-lists{
+    display: flex;
+    gap: 1rem;
+}
+.stack-list{
+    padding: 0.3rem 2.5rem;
+    color: var(--par-sub-color);
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--stack-bg-color);
+}
+/* contact */
+.contact-container {
+    width: 100%;
+    padding: 3rem;
+}
+.contact-text {
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.input-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+}
+.input-container label {
+    color: var(--white-color);
+    opacity: 0.8;
+}
+
+.input-container input, .input-container textarea {
+    padding: 0.5rem 1.4rem;
+    background-color: transparent;
+    border: 1px solid rgb(128, 133, 140);
+    height: 4rem;
+    color: var(--par-sub-color);
+    font-size: 1.4rem;
+    font-family: var(--font-fam);
+    font-weight: 400;
+    letter-spacing: -1px;
+    border-radius: 0.3rem;
+    outline: none;
+}
+.input-container input:focus, .input-container textarea:focus{
+    border: 1px solid white;
+}
+.contact {
+    margin-top: 2rem;
+    border: 1px solid rgb(155, 160, 168);
+    padding: 3rem 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    border-radius: 0.6rem;
+}
+textarea{
+    height: 10rem !important;
+}
+.btn-container {
+    text-align: right;
+    margin-top: 1.4rem;
+}
+
+.btn-container button {
+    padding: 1rem 5rem;
+    color: white;
+    border: 1px solid var(--par-sub-color);
+    background-color: transparent;
+    font-family: var(--font-fam);
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    border-radius: 0.7rem;
+    outline: none;
+    text-align: center;
+}
+.btn-container button:hover{
+    background-color: var(--stack-bg-color);
+    /* border: 1px solid transparent; */
+    color: white;
+}
+/* footer */
+
+footer {
+    margin-top: 5.2rem;
+    text-align: center;
+    opacity: 0.4;
+    font-weight: 400;
+    font-size: 1.5rem;
+}
