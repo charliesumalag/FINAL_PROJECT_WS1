@@ -88,6 +88,7 @@ header{
 .menu-link{
     position: relative;
     transition: 0.3s all ease;
+    outline: none;
 }
 .line{
     display: inline-block;
@@ -100,6 +101,7 @@ header{
     border-radius: 3rem;
     transform: translateY(-50%);
     border: none;
+    outline: none;
     transition: 0.4s all ease;
 
 }
@@ -109,6 +111,7 @@ header{
     letter-spacing: 1px;
     font-size: 1.5rem;
     color: var(--par-sub-color);
+    outline: none;
 }
 
 .menu-link:hover .line {
