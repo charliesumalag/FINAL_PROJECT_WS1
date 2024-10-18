@@ -35,6 +35,10 @@ a,li{
     text-decoration: none;
     list-style-type: none;
     color:var(--white-color);
+    outline: none;
+}
+button{
+    outline: none;
 }
 main{
     display: flex;
@@ -42,7 +46,6 @@ main{
     max-width: 140rem;
     padding-inline:3rem;
     margin: 0 auto;
-
 }
 .left{
     position: relative;
@@ -142,7 +145,6 @@ header{
     flex-direction: column;
     gap: 1rem;
     padding-top: 10rem;
-
 }
 .title{
     padding-top: 1rem;
@@ -217,6 +219,7 @@ hr{
 }
 .act-main-title{
     font-size: 2rem;
+    opacity: 0.8;
 }
 .act-text{
     color:var(--par-sub-color);
@@ -240,6 +243,7 @@ hr{
 .contact-text {
     text-align: center;
     font-size: 1.8rem;
+    opacity: 0.8;
 }
 
 .input-container {
@@ -313,4 +317,106 @@ footer {
     opacity: 0.4;
     font-weight: 400;
     font-size: 1.5rem;
+}
+
+
+/* media querries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    html{
+        font-size: 55%;
+    }
+    main{
+        display: flex;
+        gap: 0rem;
+        width: 100%;;
+        padding-inline:3rem;
+        margin: 0 auto;
+        flex-direction: column;
+    }
+    .right{
+        width: 100%;
+        margin-left:  0;
+        padding-bottom: 3rem;
+    }
+    .left{
+        flex-direction: column;
+        gap: 4rem;
+        width: 100%;
+        position: static;
+        margin-right: 0;
+        height: auto;
+        padding-top: 6rem;
+        padding-bottom: 3rem;
+    }
+    .other-platforms ul{
+        display: flex;
+        gap: 2rem;
+        position: static;
+        bottom: 4rem;
+        cursor: pointer;
+    }
+    .about-container{
+        gap: 1rem;
+        padding-top: 0;
+        margin-bottom: 2rem;
+    }
+    ._activity {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    .act-right {
+        width: 100%;
+        gap: 1rem;
+    }
+    .act-left {
+        width: 100%;
+    }
+    .act-line {
+        justify-content: center;
+        align-items: center;
+        position: static;
+        transform: none;
+    }
+    .act-title {
+        display: flex;
+        align-items: center;
+        position: static;
+        gap: 0.5rem;
+        font-size: 1.4rem;
+    }
+    .act-num{
+        padding-left: 0;
+    }
+    .activities-container {
+        display: flex;
+        flex-direction: column;
+        gap: 2.6rem;
+    }
+    .contact-container {
+    padding: 0;
+    margin-top: 3rem;
+}
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+
 }
